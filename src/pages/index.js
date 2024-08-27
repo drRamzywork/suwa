@@ -8,10 +8,11 @@ const VideoWithTags = () => {
 
   // List of topics with timestamps (in seconds)
   const topics = [
-    { title: "Create a Nextjs Project (Introduction)", time: 10 },
-    { title: "Create Folder (utils)", time: 360 },
-    { title: "Install mongoose", time: 120 },
-    { title: "connectMongoDB.js file connect ", time: 480 },
+    { title: "متحف العلوم المدقمة", time: 10 },
+    { title: "مفهوم النماذج العلمية", time: 40 },
+    { title: "أنواع النماذج العلمية", time: 114 },
+    { title: "استخدام النماذج العلمية", time: 217 },
+    { title: "الخلاصة", time: 310 },
   ];
 
   const handleTagClick = (time) => {
@@ -24,7 +25,7 @@ const VideoWithTags = () => {
     <>
       <Navbar />
 
-      <div className="container" dir="ltr">
+      <div className="container" dir="rtl">
         <section className={styles.sec_container}>
           <div className={styles.topics} style={{ marginBottom: "10px" }}>
             {topics.map((topic, index) => (
@@ -39,7 +40,7 @@ const VideoWithTags = () => {
           </div>
 
           <YouTube
-            videoId="ogDk2EsNPGI"
+            videoId="SXIHRLQ2cpk"
             ref={videoRef}
             className={styles.video}
             opts={{
